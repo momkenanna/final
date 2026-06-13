@@ -275,7 +275,7 @@ export default function Home() {
               الأسبوع السابع
             </a>
             <a
-              href="/evidence/week%209.pdf"
+              href="/evidence/الاسبوع التاسع.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn ghost"
@@ -285,7 +285,7 @@ export default function Home() {
               الأسبوع التاسع
             </a>
             <a
-              href="/evidence/week%2010.pdf"
+              href="/evidence/الاسبوع العاشر.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn ghost"
@@ -295,7 +295,7 @@ export default function Home() {
               الأسبوع العاشر
             </a>
             <a
-              href="/evidence/week%2011.pdf"
+              href="/evidence/الاسبوع الحادي عشر.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn ghost"
