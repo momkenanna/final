@@ -274,6 +274,36 @@ export default function Home() {
               <FileText size={16} />
               الأسبوع السابع
             </a>
+            <a
+              href="/evidence/week%209.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
+            >
+              <FileText size={16} />
+              الأسبوع التاسع
+            </a>
+            <a
+              href="/evidence/week%2010.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
+            >
+              <FileText size={16} />
+              الأسبوع العاشر
+            </a>
+            <a
+              href="/evidence/week%2011.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
+            >
+              <FileText size={16} />
+              الأسبوع الحادي عشر
+            </a>
           </div>
         </article>
       </section>
