@@ -1,4 +1,4 @@
-import { BookOpen, GraduationCap, HeartHandshake, Lightbulb, LineChart, Medal, Menu, ClipboardCheck, FileText, Target, Users, Sparkles } from 'lucide-react';
+import { BookOpen, GraduationCap, HeartHandshake, Lightbulb, LineChart, Medal, Menu, ClipboardCheck, FileText, Target, Users, Sparkles, CalendarCheck } from 'lucide-react';
 
 const profile = {
   studentName: 'أنسام ابراهيم ابو شاويش',
@@ -223,6 +223,49 @@ export default function Home() {
             </article>
           ))}
         </div>
+
+        {/* بطاقة الحضور والغياب */}
+        <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+            <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
+            <h3 style={{ margin: 0 }}>سجل الحضور والمشاركة الأسبوعية في مدرسة التدريب المهني</h3>
+          </div>
+          <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
+            يوثق هذا السجل حضور المتدربة ومشاركتها الأسبوعية خلال التدريب الميداني في مدرسة الرياحين، ويشمل رموز الأنشطة اليومية الموقّع عليها من المرشد المدرسي.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <a
+              href="/evidence/attendance-week1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
+            >
+              <FileText size={16} />
+              الأسبوع الأول
+            </a>
+            <a
+              href="/evidence/attendance-week6.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
+            >
+              <FileText size={16} />
+              الأسبوع السادس
+            </a>
+            <a
+              href="/evidence/attendance-week7.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
+            >
+              <FileText size={16} />
+              الأسبوع السابع
+            </a>
+          </div>
+        </article>
       </section>
 
       <section id="references" className="section">
