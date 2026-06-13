@@ -235,17 +235,27 @@ export default function Home() {
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
             <a
-              href="/evidence/attendance-week1.pdf"
+              href="/evidence/attendance.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn ghost"
               style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
             >
               <FileText size={16} />
-              الأسبوع الأول
+              سجل الحضور الكامل
             </a>
             <a
-              href="/evidence/attendance-week6.pdf"
+              href="/evidence/week%205.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
+            >
+              <FileText size={16} />
+              الأسبوع الخامس
+            </a>
+            <a
+              href="/evidence/week%206.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn ghost"
@@ -255,7 +265,7 @@ export default function Home() {
               الأسبوع السادس
             </a>
             <a
-              href="/evidence/attendance-week7.pdf"
+              href="/evidence/week%207.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn ghost"
