@@ -321,7 +321,7 @@ export default function Home() {
         </div>
         <div>
           <h4>معلومات التواصل</h4>
-          <p>{profile.email}</p>
+          <p dir="ltr" style={{textAlign:'right'}}>{profile.email}</p>
           <p>دولة الإمارات العربية المتحدة</p>
         </div>
         <div>
