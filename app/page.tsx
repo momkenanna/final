@@ -3,12 +3,12 @@ import { BookOpen, GraduationCap, HeartHandshake, Lightbulb, LineChart, Medal, M
 const profile = {
   studentName: 'أنسام ابراهيم ابو شاويش',
   college: 'كلية الإمارات للتطوير التربوي',
-  program: 'تدريب عملي',
+  program: 'تدريب عملي / تطوير الممارسات المهنية',
   academicYear: '2025 - 2026',
   courseDoctor: 'دكتور المساق',
   supervisor: 'مشرف/ة المساق',
   school: 'مدرسية الرياحين',
-  specialization: 'اللغة العربية و الاسلامية',
+  specialization: 'اللغة العربية - الصف الأول',
   email: 'example@ecae.ac.ae',
   phone: '05XXXXXXXX',
 };
