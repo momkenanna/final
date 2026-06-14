@@ -9,7 +9,7 @@ const profile = {
   supervisor: 'مشرف/ة المساق',
   school: 'مدرسية الرياحين',
   specialization: 'اللغة العربية و الاسلامية',
-  email: 'example@ecae.ac.ae',
+  email: '025177@ecae.ac.ae',
   phone: '05XXXXXXXX',
 };
 
@@ -318,7 +318,7 @@ export default function Home() {
       <footer className="footer">
         <div>
           <h3>{profile.studentName}</h3>
-          <p>ملف الإنجاز الإلكتروني للتدريب العملي - وفق الإطار الوطني لكفاءات التربويين</p>
+          <p>ملف الإنجاز الإلكتروني للتدريب العملي</p>
         </div>
         <div>
           <h4>معلومات التواصل</h4>
