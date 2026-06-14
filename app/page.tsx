@@ -9,8 +9,7 @@ const profile = {
   supervisor: 'مشرف/ة المساق',
   school: 'مدرسية الرياحين',
   specialization: 'اللغة العربية و الاسلامية',
-  email: '025177@ecae.ac.ae',
-  phone: '05XXXXXXXX',
+  email: 's025177@ecae.ac.ae',
 };
 
 const navItems = [
@@ -323,7 +322,6 @@ export default function Home() {
         <div>
           <h4>معلومات التواصل</h4>
           <p>{profile.email}</p>
-          <p>{profile.phone}</p>
           <p>دولة الإمارات العربية المتحدة</p>
         </div>
         <div>
