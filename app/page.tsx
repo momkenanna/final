@@ -9,7 +9,7 @@ const profile = {
   supervisor: 'مشرف/ة المساق',
   school: 'مدرسية الرياحين',
   specialization: 'اللغة العربية و الاسلامية',
-  email: 's025177@ecae.ac.ae',
+  email: '025177@ecae.ac.ae',
 };
 
 const navItems = [
