@@ -161,7 +161,7 @@ export default function Home() {
         <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
             <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
-            <h3 style={{ margin: 0 }}>سجل الحضور والمشاركة الأسبوعية في مدرسة التدريب المهني</h3>
+            <h3 style={{ margin: 0 }}>سجل الحضور</h3>
           </div>
           <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
             يوثق هذا السجل حضور المتدربة ومشاركتها الأسبوعية خلال التدريب الميداني في مدرسة الرياحين، ويشمل رموز الأنشطة اليومية الموقّع عليها من المرشد المدرسي.
@@ -250,6 +250,25 @@ export default function Home() {
             </article>
           ))}
         </div>
+
+        {/* بطاقة المشاركة الأسبوعية */}
+        <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+            <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
+            <h3 style={{ margin: 0 }}>المشاركة الأسبوعية في مدرسة التدريب المهني</h3>
+          </div>
+          <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
+            توثق هذه السجلات مشاركة المتدربة الأسبوعية خلال فترة التدريب الميداني في مدرسة الرياحين.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <a href="/evidence/week%205.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الخامس</a>
+            <a href="/evidence/week%206.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السادس</a>
+            <a href="/evidence/week%207.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السابع</a>
+            <a href="/evidence/week%209.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع التاسع</a>
+            <a href="/evidence/week%2010.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع العاشر</a>
+            <a href="/evidence/week%2011.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الحادي عشر</a>
+          </div>
+        </article>
 
       </section>
 
