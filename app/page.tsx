@@ -157,7 +157,7 @@ export default function Home() {
             <p>من 5.00 - مستوى ممتاز</p>
           </div>
         </div>
-        {/* تقييم المرشد الأكاديمي */}}
+        {/* تقييم المرشد الأكاديمي */}
         <div className="evidence-grid" style={{marginTop:'1.5rem'}}>
           <article className="evidence-card">
             <FileText />
