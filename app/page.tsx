@@ -157,18 +157,32 @@ export default function Home() {
             <p>من 5.00 - مستوى ممتاز</p>
           </div>
         </div>
-        <div className="evidence-grid" style={{marginTop:'2rem'}}>
-          <article className="evidence-card">
-            <FileText />
-            <h3>سجل الحضور والغياب</h3>
-            <p>سجل الحضور والمشاركة الأسبوعية في مدرسة التدريب المهني</p>
-            <a href="/evidence/attendance.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
-          </article>
+        {/* بطاقة الحضور والغياب */}
+        <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+            <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
+            <h3 style={{ margin: 0 }}>سجل الحضور والمشاركة الأسبوعية في مدرسة التدريب المهني</h3>
+          </div>
+          <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
+            يوثق هذا السجل حضور المتدربة ومشاركتها الأسبوعية خلال التدريب الميداني في مدرسة الرياحين، ويشمل رموز الأنشطة اليومية الموقّع عليها من المرشد المدرسي.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <a href="/evidence/attendance.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />سجل الحضور الكامل</a>
+            <a href="/evidence/week%205.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الخامس</a>
+            <a href="/evidence/week%206.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السادس</a>
+            <a href="/evidence/week%207.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السابع</a>
+            <a href="/evidence/week%209.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع التاسع</a>
+            <a href="/evidence/week%2010.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع العاشر</a>
+            <a href="/evidence/week%2011.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الحادي عشر</a>
+          </div>
+        </article>
+        {/* تقييم المرشد الأكاديمي */}
+        <div className="evidence-grid" style={{marginTop:'1.5rem'}}>
           <article className="evidence-card">
             <FileText />
             <h3>تقييم المرشد الأكاديمي</h3>
             <p>نموذج تقييم المرشد الأكاديمي للأداء المهني خلال فترة التدريب</p>
-            <a href="/evidence/supervisor-evaluation.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
+            <a href="/evidence/ITEF.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
           </article>
         </div>
       </section>
@@ -237,88 +251,6 @@ export default function Home() {
           ))}
         </div>
 
-        {/* بطاقة الحضور والغياب */}
-        <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
-            <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
-            <h3 style={{ margin: 0 }}>سجل الحضور والمشاركة الأسبوعية في مدرسة التدريب المهني</h3>
-          </div>
-          <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-            يوثق هذا السجل حضور المتدربة ومشاركتها الأسبوعية خلال التدريب الميداني في مدرسة الرياحين، ويشمل رموز الأنشطة اليومية الموقّع عليها من المرشد المدرسي.
-          </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
-            <a
-              href="/evidence/attendance.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
-            >
-              <FileText size={16} />
-              سجل الحضور الكامل
-            </a>
-            <a
-              href="/evidence/week%205.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
-            >
-              <FileText size={16} />
-              الأسبوع الخامس
-            </a>
-            <a
-              href="/evidence/week%206.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
-            >
-              <FileText size={16} />
-              الأسبوع السادس
-            </a>
-            <a
-              href="/evidence/week%207.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
-            >
-              <FileText size={16} />
-              الأسبوع السابع
-            </a>
-            <a
-              href="/evidence/week%209.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
-            >
-              <FileText size={16} />
-              الأسبوع التاسع
-            </a>
-            <a
-              href="/evidence/week%2010.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
-            >
-              <FileText size={16} />
-              الأسبوع العاشر
-            </a>
-            <a
-              href="/evidence/week%2011.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn ghost"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}
-            >
-              <FileText size={16} />
-              الأسبوع الحادي عشر
-            </a>
-          </div>
-        </article>
       </section>
 
       <section id="references" className="section">
