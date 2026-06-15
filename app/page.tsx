@@ -17,9 +17,9 @@ const navItems = [
   ['الإطار الوطني', 'framework'],
   ['نبذة عني', 'about'],
   ['السلوك المهني', 'ethics'],
-  ['المعرفة المهنية', 'knowledge'],
-  ['الممارسة المهنية', 'practice'],
-  ['النمو المهني', 'growth'],
+  ['المتعاون مع المجتمع', 'knowledge'],
+  ['المهني الفعال', 'practice'],
+  ['صانع المستقبل', 'growth'],
   ['الأدلة', 'evidence'],
   ['المراجع', 'references'],
 ];
@@ -35,9 +35,9 @@ const slefItems = [
 
 const cards = [
   { icon: HeartHandshake, title: 'السلوك المهني والأخلاقي', text: 'الالتزام بالقيم المهنية، احترام المتعلمين، المحافظة على السرية، وبناء علاقات مهنية إيجابية.' },
-  { icon: BookOpen, title: 'المعرفة المهنية', text: 'فهم خصائص طلبة الصف الأول، والمحتوى اللغوي، واستراتيجيات التدريس المناسبة للمرحلة العمرية.' },
-  { icon: ClipboardCheck, title: 'الممارسة المهنية', text: 'تخطيط الدروس وتنفيذها وتقييم تعلم الطلبة باستخدام أدوات واضحة مرتبطة بمخرجات التعلم.' },
-  { icon: LineChart, title: 'النمو المهني', text: 'التأمل الذاتي، الاستفادة من التغذية الراجعة، والمشاركة في مجتمعات التعلم المهنية.' },
+  { icon: BookOpen, title: 'المتعاون مع المجتمع', text: 'فهم خصائص طلبة الصف الأول، والمحتوى اللغوي، واستراتيجيات التدريس المناسبة للمرحلة العمرية.' },
+  { icon: ClipboardCheck, title: 'المهني الفعال', text: 'تخطيط الدروس وتنفيذها وتقييم تعلم الطلبة باستخدام أدوات واضحة مرتبطة بمخرجات التعلم.' },
+  { icon: LineChart, title: 'صانع المستقبل', text: 'التأمل الذاتي، الاستفادة من التغذية الراجعة، والمشاركة في مجتمعات التعلم المهنية.' },
 ];
 
 const lessonPlans = [
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       <section id="framework" className="section soft-bg">
-        <SectionTitle eyebrow="الإطار الوطني" title="مواءمة الملف مع كفاءات التربويين" text="يعرض الملف الأدلة والتأملات وفق أربعة محاور رئيسية: السلوك المهني، المعرفة المهنية، الممارسة المهنية، والنمو المهني." />
+        <SectionTitle eyebrow="الإطار الوطني" title="مواءمة الملف مع كفاءات التربويين" text="يعرض الملف الأدلة والتأملات وفق أربعة محاور رئيسية: السلوك المهني والأخلاقي، المتعاون مع المجتمع، المهني الفعال، وصانع المستقبل." />
         <div className="card-grid four">
           {cards.map((card) => {
             const Icon = card.icon;
@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       <section id="knowledge" className="section">
-        <SectionTitle eyebrow="المعيار الثاني" title="المعرفة المهنية" />
+        <SectionTitle eyebrow="المعيار الثاني" title="المتعاون مع المجتمع" />
         <div className="rich-text">
           <p>
             تظهر المعرفة المهنية من خلال فهمي لخصائص طلبة الصف الأول واحتياجاتهم اللغوية والنمائية. فالطلبة في هذه المرحلة يحتاجون إلى تعلم بصري وسمعي وحركي،
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       <section id="practice" className="section soft-bg">
-        <SectionTitle eyebrow="المعيار الثالث" title="الممارسة المهنية وخطط الدروس" text="توضح الخطط كيفية تحويل المعرفة المهنية إلى إجراءات تدريسية قابلة للتنفيذ والتقييم." />
+        <SectionTitle eyebrow="المعيار الثالث" title="المهني الفعال" text="توضح الخطط كيفية تحويل المعرفة المهنية إلى إجراءات تدريسية قابلة للتنفيذ والتقييم." />
         <div className="lesson-grid">
           {lessonPlans.map((lesson, index) => (
             <article className="lesson-card" key={lesson.title}>
@@ -216,7 +216,7 @@ export default function Home() {
 
       <section id="growth" className="section two-columns">
         <div>
-          <SectionTitle eyebrow="المعيار الرابع" title="النمو المهني والتأمل" />
+          <SectionTitle eyebrow="المعيار الرابع" title="صانع المستقبل" />
           <p>
             ساعدتني الملاحظات الصفية والتقييم الذاتي على الانتقال من التركيز على تنفيذ خطوات الدرس إلى التركيز على أثر التعلم.
             أصبحت أسأل نفسي بعد كل درس: ما الذي تعلمه الطلبة؟ ما الأدلة؟ من يحتاج إلى دعم؟ وكيف أعدل الدرس القادم؟
@@ -287,7 +287,7 @@ export default function Home() {
         <div>
           <h4>روابط سريعة</h4>
           <a href="#framework">الإطار الوطني</a>
-          <a href="#practice">الممارسة المهنية</a>
+          <a href="#practice">المهني الفعال</a>
           <a href="#evidence">الأدلة</a>
         </div>
       </footer>
