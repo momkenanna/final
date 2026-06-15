@@ -170,25 +170,18 @@ export default function Home() {
         <article className="evidence-card attendance-card" style={{ marginTop: '1.5rem', maxWidth: '100%', width: '100%' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
             <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
-            <h3 style={{ margin: 0 }}>المشاركة الأسبوعية و المشاهدات I-LOR في مدرسة التدريب المهني</h3>
+            <h3 style={{ margin: 0 }}>جدول الحضور</h3>
           </div>
           <p style={{ marginBottom: '0.5rem', color: 'var(--text-muted)' }}>
             توثق هذه السجلات مشاركة المتدربة الأسبوعية خلال فترة التدريب الميداني في مدرسة الرياحين.
           </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1rem' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
             <a href="/evidence/week%205.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الخامس</a>
             <a href="/evidence/week%206.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السادس</a>
             <a href="/evidence/week%207.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السابع</a>
             <a href="/evidence/week%209.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع التاسع</a>
             <a href="/evidence/week%2010.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع العاشر</a>
             <a href="/evidence/week%2011.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الحادي عشر</a>
-          </div>
-          <p style={{ marginBottom: '0.5rem', color: 'var(--text-muted)', fontWeight: '600' }}>المشاهدات I-LOR:</p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
-            <a href="/evidence/L-1.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الأولى</a>
-            <a href="/evidence/L-2.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الثانية</a>
-            <a href="/evidence/L-3.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الثالثة</a>
-            <a href="/evidence/L-4.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الرابعة</a>
           </div>
         </article>
       </section>
@@ -256,6 +249,21 @@ export default function Home() {
             </article>
           ))}
         </div>
+
+        {/* بطاقة المشاركة والمشاهدات */}
+        <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+            <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
+            <h3 style={{ margin: 0 }}>المشاركة الأسبوعية و المشاهدات I-LOR في مدرسة التدريب المهني</h3>
+          </div>
+          <p style={{ marginBottom: '0.5rem', color: 'var(--text-muted)', fontWeight: '600' }}>المشاهدات I-LOR:</p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <a href="/evidence/L-1.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الأولى</a>
+            <a href="/evidence/L-2.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الثانية</a>
+            <a href="/evidence/L-3.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الثالثة</a>
+            <a href="/evidence/L-4.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الرابعة</a>
+          </div>
+        </article>
 
       </section>
 
