@@ -157,26 +157,7 @@ export default function Home() {
             <p>من 5.00 - مستوى ممتاز</p>
           </div>
         </div>
-        {/* بطاقة الحضور والغياب */}
-        <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
-            <CalendarCheck size={32} style={{ color: 'var(--primary)' }} />
-            <h3 style={{ margin: 0 }}>سجل الحضور</h3>
-          </div>
-          <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-            يوثق هذا السجل حضور المتدربة ومشاركتها الأسبوعية خلال التدريب الميداني في مدرسة الرياحين، ويشمل رموز الأنشطة اليومية الموقّع عليها من المرشد المدرسي.
-          </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
-            <a href="/evidence/attendance.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />سجل الحضور الكامل</a>
-            <a href="/evidence/week%205.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الخامس</a>
-            <a href="/evidence/week%206.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السادس</a>
-            <a href="/evidence/week%207.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع السابع</a>
-            <a href="/evidence/week%209.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع التاسع</a>
-            <a href="/evidence/week%2010.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع العاشر</a>
-            <a href="/evidence/week%2011.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />الأسبوع الحادي عشر</a>
-          </div>
-        </article>
-        {/* تقييم المرشد الأكاديمي */}
+        {/* تقييم المرشد الأكاديمي */}}
         <div className="evidence-grid" style={{marginTop:'1.5rem'}}>
           <article className="evidence-card">
             <FileText />
@@ -270,10 +251,10 @@ export default function Home() {
           </div>
           <p style={{ marginBottom: '0.5rem', color: 'var(--text-muted)', fontWeight: '600' }}>المشاهدات I-LOR:</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
-            <a href="/evidence/L-1.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />L-1</a>
-            <a href="/evidence/L-2.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />L-2</a>
-            <a href="/evidence/L-3.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />L-3</a>
-            <a href="/evidence/L-4.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />L-4</a>
+            <a href="/evidence/L-1.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الأولى</a>
+            <a href="/evidence/L-2.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الثانية</a>
+            <a href="/evidence/L-3.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الثالثة</a>
+            <a href="/evidence/L-4.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الرابعة</a>
           </div>
         </article>
 
