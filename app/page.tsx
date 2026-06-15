@@ -157,6 +157,20 @@ export default function Home() {
             <p>من 5.00 - مستوى ممتاز</p>
           </div>
         </div>
+        <div className="evidence-grid" style={{marginTop:'2rem'}}>
+          <article className="evidence-card">
+            <FileText />
+            <h3>سجل الحضور والغياب</h3>
+            <p>سجل الحضور والمشاركة الأسبوعية في مدرسة التدريب المهني</p>
+            <a href="/evidence/attendance.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
+          </article>
+          <article className="evidence-card">
+            <FileText />
+            <h3>تقييم المرشد الأكاديمي</h3>
+            <p>نموذج تقييم المرشد الأكاديمي للأداء المهني خلال فترة التدريب</p>
+            <a href="/evidence/supervisor-evaluation.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
+          </article>
+        </div>
       </section>
 
       <section id="knowledge" className="section">

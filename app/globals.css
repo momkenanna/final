@@ -87,6 +87,8 @@ dd { margin: 0; font-weight: 800; }
 .feature-card svg, .evidence-card svg, .quote-card svg, .goal-card svg { color: var(--primary); width: 34px; height: 34px; }
 .feature-card h3, .lesson-card h3, .evidence-card h3, .goal-card h3 { margin: 14px 0 8px; color: var(--primary-dark); }
 .feature-card p, .evidence-card p { color: var(--muted); }
+.evidence-link { display: inline-block; margin-top: 12px; padding: 6px 16px; background: var(--primary); color: #fff; border-radius: 6px; font-size: 0.85rem; text-decoration: none; }
+.evidence-link:hover { background: var(--primary-dark); }
 .two-columns { display: grid; grid-template-columns: 1fr 0.75fr; gap: 34px; align-items: start; }
 .quote-card blockquote { margin: 16px 0 0; font-size: 22px; color: var(--primary-dark); font-weight: 800; }
 
