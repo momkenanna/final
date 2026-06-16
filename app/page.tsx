@@ -202,6 +202,17 @@ export default function Home() {
             مثل درس التسامح، حتى يصبح التعلم ذا معنى وقريباً من حياة الطلبة.
           </p>
         </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '1.5rem' }}>
+          <a href="/evidence/cor%201.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%201.jpg" alt="cor 1" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/cor%202.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%202.jpg" alt="cor 2" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/cor%203.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%203.jpg" alt="cor 3" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+        </div>
       </section>
 
       <section id="practice" className="section soft-bg">
