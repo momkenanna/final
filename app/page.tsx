@@ -299,6 +299,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* استخدام التكنولوجيا - المعيار الرابع */}
+      <section className="section" style={{paddingTop: 0}}>
+        <h3 style={{ marginBottom: '1rem', color: 'var(--primary-dark)', textAlign: 'right' }}>استخدام التكنولوجيا بالغرفة الصفية</h3>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+          <a href="/evidence/t%201.jpeg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/t%201.jpeg" alt="تكنولوجيا 1" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/t%202.jpeg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/t%202.jpeg" alt="تكنولوجيا 2" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/t%203.jpeg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/t%203.jpeg" alt="تكنولوجيا 3" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+        </div>
+      </section>
+
       <section id="evidence" className="section soft-bg">
         <SectionTitle eyebrow="أدلة الإنجاز" title="معرض الأدلة والمرفقات" text="يمكن لاحقاً استبدال هذه البطاقات بصور حقيقية، ملفات PDF، شهادات، نماذج أعمال الطلبة، وأدوات التقييم." />
         <div className="evidence-grid">
