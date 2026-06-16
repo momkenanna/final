@@ -287,6 +287,15 @@ export default function Home() {
           <a href="/evidence/Cert%204.JPG" target="_blank" rel="noopener noreferrer">
             <img src="/evidence/Cert%204.JPG" alt="شهادة 4" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
           </a>
+          <a href="/evidence/Cert%205.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/Cert%205.JPG" alt="شهادة 5" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/Cert%206.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/Cert%206.JPG" alt="شهادة 6" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/Cert%20group.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/Cert%20group.JPG" alt="صورة جماعية" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
         </div>
       </section>
 
