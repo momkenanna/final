@@ -312,6 +312,9 @@ export default function Home() {
           <a href="/evidence/t%203.jpeg" target="_blank" rel="noopener noreferrer">
             <img src="/evidence/t%203.jpeg" alt="تكنولوجيا 3" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
           </a>
+          <a href="/evidence/t%204.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/t%204.jpg" alt="تكنولوجيا 4" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
         </div>
       </section>
 
