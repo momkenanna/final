@@ -255,6 +255,21 @@ export default function Home() {
           </ol>
         </div>
       </section>
+      {/* مدونات تأملية - المعيار الرابع */}
+      <section className="section" style={{paddingTop: 0}}>
+        <article className="evidence-card attendance-card" style={{ maxWidth: '100%', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+            <FileText size={32} style={{ color: 'var(--primary)' }} />
+            <h3 style={{ margin: 0 }}>المدونات التأملية</h3>
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <a href="/evidence/M%201.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المدونة الأولى</a>
+            <a href="/evidence/M%202.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المدونة الثانية</a>
+            <a href="/evidence/M%203.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المدونة الثالثة</a>
+            <a href="/evidence/M%204.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المدونة الرابعة</a>
+          </div>
+        </article>
+      </section>
 
       <section id="evidence" className="section soft-bg">
         <SectionTitle eyebrow="أدلة الإنجاز" title="معرض الأدلة والمرفقات" text="يمكن لاحقاً استبدال هذه البطاقات بصور حقيقية، ملفات PDF، شهادات، نماذج أعمال الطلبة، وأدوات التقييم." />
