@@ -212,6 +212,21 @@ export default function Home() {
           <a href="/evidence/cor%203.jpg" target="_blank" rel="noopener noreferrer">
             <img src="/evidence/cor%203.jpg" alt="cor 3" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
           </a>
+          <a href="/evidence/cor%204.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%204.JPG" alt="cor 4" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/cor%205.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%205.JPG" alt="cor 5" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/cor%206.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%206.JPG" alt="cor 6" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/cor%207.jpeg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%207.jpeg" alt="cor 7" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/cor%208.jpeg" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/cor%208.jpeg" alt="cor 8" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
         </div>
       </section>
 
