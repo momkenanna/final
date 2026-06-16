@@ -271,6 +271,25 @@ export default function Home() {
         </article>
       </section>
 
+      {/* شهادات - المعيار الرابع */}
+      <section className="section" style={{paddingTop: 0}}>
+        <h3 style={{ marginBottom: '1rem', color: 'var(--primary-dark)', textAlign: 'right' }}>شهادات</h3>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+          <a href="/evidence/Cert%201.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/Cert%201.JPG" alt="شهادة 1" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/Cert%202.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/Cert%202.JPG" alt="شهادة 2" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/Cert%203.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/Cert%203.JPG" alt="شهادة 3" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+          <a href="/evidence/Cert%204.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="/evidence/Cert%204.JPG" alt="شهادة 4" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
+          </a>
+        </div>
+      </section>
+
       <section id="evidence" className="section soft-bg">
         <SectionTitle eyebrow="أدلة الإنجاز" title="معرض الأدلة والمرفقات" text="يمكن لاحقاً استبدال هذه البطاقات بصور حقيقية، ملفات PDF، شهادات، نماذج أعمال الطلبة، وأدوات التقييم." />
         <div className="evidence-grid">
