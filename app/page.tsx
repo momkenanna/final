@@ -344,19 +344,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="evidence" className="section soft-bg">
-        <SectionTitle eyebrow="أدلة الإنجاز" title="معرض الأدلة والمرفقات" text="يمكن لاحقاً استبدال هذه البطاقات بصور حقيقية، ملفات PDF، شهادات، نماذج أعمال الطلبة، وأدوات التقييم." />
-        <div className="evidence-grid">
-          {['خطة درس القراءة التشاركية', 'بطاقة تقييم القراءة', 'نشاط قيمة التسامح', 'درس الجملة الاسمية والفعلية', 'نماذج من أعمال الطلبة', 'شهادات أو ورش مهنية'].map((item) => (
-            <article className="evidence-card" key={item}>
-              <FileText />
-              <h3>{item}</h3>
-              <p>وصف مختصر للدليل، علاقته بمخرجات التعلم، وكيف يثبت تطور الممارسة المهنية.</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section id="references" className="section">
         <SectionTitle eyebrow="APA 7" title="قائمة المراجع" text="المراجع المقترحة لدعم المحتوى الأكاديمي والتأملي لملف الإنجاز." />
         <ol className="references-list">
