@@ -92,6 +92,17 @@ const references = [
   'Brookfield, S. D. (2017). Becoming a critically reflective teacher. Jossey-Bass.',
 ];
 
+const communityImages = [
+  { src: '/evidence/cor%201.jpg', title: 'مبادرة مجتمعية 1' },
+  { src: '/evidence/cor%202.jpg', title: 'مبادرة مجتمعية 2' },
+  { src: '/evidence/cor%203.jpg', title: 'مبادرة مجتمعية 3' },
+  { src: '/evidence/cor%204.JPG', title: 'مبادرة مجتمعية 4' },
+  { src: '/evidence/cor%205.JPG', title: 'مبادرة مجتمعية 5' },
+  { src: '/evidence/cor%206.JPG', title: 'مبادرة مجتمعية 6' },
+  { src: '/evidence/cor%207.jpeg', title: 'مبادرة مجتمعية 7' },
+  { src: '/evidence/cor%208.jpeg', title: 'مبادرة مجتمعية 8' },
+];
+
 function SectionTitle({ eyebrow, title, text }: { eyebrow: string; title: string; text?: string }) {
   return (
     <div className="section-title">
@@ -235,31 +246,22 @@ export default function Home() {
             مثل درس التسامح، حتى يصبح التعلم ذا معنى وقريباً من حياة الطلبة.
           </p>
         </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '1.5rem' }}>
-          <a href="/evidence/cor%201.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%201.jpg" alt="cor 1" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
-          <a href="/evidence/cor%202.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%202.jpg" alt="cor 2" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
-          <a href="/evidence/cor%203.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%203.jpg" alt="cor 3" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
-          <a href="/evidence/cor%204.JPG" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%204.JPG" alt="cor 4" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
-          <a href="/evidence/cor%205.JPG" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%205.JPG" alt="cor 5" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
-          <a href="/evidence/cor%206.JPG" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%206.JPG" alt="cor 6" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
-          <a href="/evidence/cor%207.jpeg" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%207.jpeg" alt="cor 7" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
-          <a href="/evidence/cor%208.jpeg" target="_blank" rel="noopener noreferrer">
-            <img src="/evidence/cor%208.jpeg" alt="cor 8" style={{ width: '220px', borderRadius: '8px', border: '1px solid #ddd' }} />
-          </a>
+        <div className="community-showcase">
+          {communityImages.map((image, index) => (
+            <a
+              href={image.src}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`community-card ${index === 0 ? 'feature' : ''}`}
+              key={image.src}
+            >
+              <img src={image.src} alt={image.title} />
+              <div className="community-overlay">
+                <span>المتعاون مع المجتمع</span>
+                <strong>{image.title}</strong>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
