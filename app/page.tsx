@@ -56,6 +56,21 @@ const practiceGalleryImages = [
   { src: '/evidence/t%202.jpeg', title: 'توظيف التقنية 2', type: 'تكنولوجيا' },
   { src: '/evidence/t%203.jpeg', title: 'توظيف التقنية 3', type: 'تكنولوجيا' },
   { src: '/evidence/t%204.jpg', title: 'توظيف التقنية 4', type: 'تكنولوجيا' },
+  { src: '/evidence/Paper%20%281%29.JPG', title: 'ورقة عمل 1', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%282%29.JPG', title: 'ورقة عمل 2', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%283%29.JPG', title: 'ورقة عمل 3', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%284%29.JPG', title: 'ورقة عمل 4', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%285%29.JPG', title: 'ورقة عمل 5', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%286%29.JPG', title: 'ورقة عمل 6', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%287%29.JPG', title: 'ورقة عمل 7', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%288%29.JPG', title: 'ورقة عمل 8', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%289%29.JPG', title: 'ورقة عمل 9', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%2810%29.JPG', title: 'ورقة عمل 10', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%2811%29.jpg', title: 'ورقة عمل 11', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%2812%29.JPG', title: 'ورقة عمل 12', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%20%2813%29.JPG', title: 'ورقة عمل 13', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%2014.jpeg', title: 'ورقة عمل 14', type: 'أوراق عمل' },
+  { src: '/evidence/Paper%2015.jpeg', title: 'ورقة عمل 15', type: 'أوراق عمل' },
 ];
 
 const cards = [
