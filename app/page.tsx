@@ -467,7 +467,6 @@ export default function Home() {
           <h4>روابط سريعة</h4>
           <a href="#framework">الإطار الوطني</a>
           <a href="#practice">المهني الفعال</a>
-          <a href="#evidence">الأدلة</a>
         </div>
       </footer>
     </main>
