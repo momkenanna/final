@@ -150,16 +150,6 @@ export default function Home() {
 
       <section id="ethics" className="section soft-bg">
         <SectionTitle eyebrow="المعيار الأول" title="السلوك المهني والأخلاقي" text="نموذج التقييم النهائي من المرشد المدرسي SLEF يعكس الالتزام المهني، التعاون، الاحترام، والنزاهة." />
-        <div className="score-layout">
-          <div className="score-list">
-            {slefItems.map(([name, score]) => <div className="score-row" key={name}><span>{name}</span><strong>{score}</strong></div>)}
-          </div>
-          <div className="final-score">
-            <span>النتيجة النهائية</span>
-            <strong>{slefAverage}</strong>
-            <p>من 5.00 - مستوى ممتاز</p>
-          </div>
-        </div>
         {/* تقييم المرشد الأكاديمي */}
         <div className="evidence-grid" style={{marginTop:'1.5rem'}}>
           <article className="evidence-card">
