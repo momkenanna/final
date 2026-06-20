@@ -33,6 +33,9 @@ const slefItems = [
   ['الاستعداد للتعلم والتطوير', '4.8 / 5'],
 ];
 
+const slefScores = slefItems.map(([, score]) => Number.parseFloat(score.split('/')[0].trim()));
+const slefAverage = (slefScores.reduce((sum, value) => sum + value, 0) / slefScores.length).toFixed(1);
+
 const cards = [
   { icon: HeartHandshake, title: 'السلوك المهني والأخلاقي', text: 'الالتزام بالقيم المهنية، احترام المتعلمين، المحافظة على السرية، وبناء علاقات مهنية إيجابية.' },
   { icon: BookOpen, title: 'المتعاون مع المجتمع', text: 'فهم خصائص طلبة الصف الأول، والمحتوى اللغوي، واستراتيجيات التدريس المناسبة للمرحلة العمرية.' },
@@ -153,7 +156,7 @@ export default function Home() {
           </div>
           <div className="final-score">
             <span>النتيجة النهائية</span>
-            <strong>4.7</strong>
+            <strong>{slefAverage}</strong>
             <p>من 5.00 - مستوى ممتاز</p>
           </div>
         </div>
@@ -164,6 +167,12 @@ export default function Home() {
             <h3>تقييم المرشد الأكاديمي</h3>
             <p>نموذج تقييم المرشد الأكاديمي للأداء المهني خلال فترة التدريب</p>
             <a href="/evidence/ITEF.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
+          </article>
+          <article className="evidence-card">
+            <FileText />
+            <h3>تقييم SELF</h3>
+            <p>نموذج التقييم الذاتي وفق معايير السلوك المهني والأخلاقي</p>
+            <a href="/evidence/SELF.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
           </article>
         </div>
         {/* بطاقة الحضور والمشاركة والمشاهدات */}
