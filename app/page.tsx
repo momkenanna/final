@@ -300,8 +300,7 @@ export default function Home() {
 
         <section className="academic-gallery" aria-label="معرض الصور الأكاديمي">
           <div className="gallery-heading">
-            <h3>معرض الصور الأكاديمي</h3>
-            <p>تنقّل بين جميع صور الأدلة ضمن عرض بصري يعكس الطابع الأكاديمي.</p>
+            <h3>معرض الصور</h3>
           </div>
 
           <div className="gallery-stage">
