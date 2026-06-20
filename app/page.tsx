@@ -1,4 +1,7 @@
-import { BookOpen, GraduationCap, HeartHandshake, Lightbulb, LineChart, Medal, Menu, ClipboardCheck, FileText, Target, Users, Sparkles, CalendarCheck } from 'lucide-react';
+'use client';
+
+import { useState } from 'react';
+import { BookOpen, GraduationCap, HeartHandshake, Lightbulb, LineChart, Medal, Menu, ClipboardCheck, FileText, Target, Users, Sparkles, CalendarCheck, ChevronRight, ChevronLeft } from 'lucide-react';
 
 const profile = {
   studentName: 'أنسام ابراهيم ابو شاويش',
@@ -33,8 +36,27 @@ const slefItems = [
   ['الاستعداد للتعلم والتطوير', '4.8 / 5'],
 ];
 
-const slefScores = slefItems.map(([, score]) => Number.parseFloat(score.split('/')[0].trim()));
-const slefAverage = (slefScores.reduce((sum, value) => sum + value, 0) / slefScores.length).toFixed(1);
+const practiceGalleryImages = [
+  { src: '/evidence/Cert%201.JPG', title: 'شهادة 1', type: 'شهادات' },
+  { src: '/evidence/Cert%202.JPG', title: 'شهادة 2', type: 'شهادات' },
+  { src: '/evidence/Cert%203.JPG', title: 'شهادة 3', type: 'شهادات' },
+  { src: '/evidence/Cert%204.JPG', title: 'شهادة 4', type: 'شهادات' },
+  { src: '/evidence/Cert%205.JPG', title: 'شهادة 5', type: 'شهادات' },
+  { src: '/evidence/Cert%206.JPG', title: 'شهادة 6', type: 'شهادات' },
+  { src: '/evidence/Cert%20group.JPG', title: 'صورة جماعية', type: 'شهادات' },
+  { src: '/evidence/cor%201.jpg', title: 'تعاون مجتمعي 1', type: 'تعاون مجتمعي' },
+  { src: '/evidence/cor%202.jpg', title: 'تعاون مجتمعي 2', type: 'تعاون مجتمعي' },
+  { src: '/evidence/cor%203.jpg', title: 'تعاون مجتمعي 3', type: 'تعاون مجتمعي' },
+  { src: '/evidence/cor%204.JPG', title: 'تعاون مجتمعي 4', type: 'تعاون مجتمعي' },
+  { src: '/evidence/cor%205.JPG', title: 'تعاون مجتمعي 5', type: 'تعاون مجتمعي' },
+  { src: '/evidence/cor%206.JPG', title: 'تعاون مجتمعي 6', type: 'تعاون مجتمعي' },
+  { src: '/evidence/cor%207.jpeg', title: 'تعاون مجتمعي 7', type: 'تعاون مجتمعي' },
+  { src: '/evidence/cor%208.jpeg', title: 'تعاون مجتمعي 8', type: 'تعاون مجتمعي' },
+  { src: '/evidence/t%201.jpeg', title: 'توظيف التقنية 1', type: 'تكنولوجيا' },
+  { src: '/evidence/t%202.jpeg', title: 'توظيف التقنية 2', type: 'تكنولوجيا' },
+  { src: '/evidence/t%203.jpeg', title: 'توظيف التقنية 3', type: 'تكنولوجيا' },
+  { src: '/evidence/t%204.jpg', title: 'توظيف التقنية 4', type: 'تكنولوجيا' },
+];
 
 const cards = [
   { icon: HeartHandshake, title: 'السلوك المهني والأخلاقي', text: 'الالتزام بالقيم المهنية، احترام المتعلمين، المحافظة على السرية، وبناء علاقات مهنية إيجابية.' },
@@ -81,6 +103,18 @@ function SectionTitle({ eyebrow, title, text }: { eyebrow: string; title: string
 }
 
 export default function Home() {
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  const goToNextImage = () => {
+    setActiveImageIndex((prev) => (prev + 1) % practiceGalleryImages.length);
+  };
+
+  const goToPrevImage = () => {
+    setActiveImageIndex((prev) => (prev - 1 + practiceGalleryImages.length) % practiceGalleryImages.length);
+  };
+
+  const activeImage = practiceGalleryImages[activeImageIndex];
+
   return (
     <main>
       <header className="site-header">
@@ -263,6 +297,51 @@ export default function Home() {
             <a href="/evidence/L-4.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem' }}><FileText size={16} />المشاهدة الرابعة</a>
           </div>
         </article>
+
+        <section className="academic-gallery" aria-label="معرض الصور الأكاديمي">
+          <div className="gallery-heading">
+            <h3>معرض الصور الأكاديمي</h3>
+            <p>تنقّل بين جميع صور الأدلة ضمن عرض بصري يعكس الطابع الأكاديمي.</p>
+          </div>
+
+          <div className="gallery-stage">
+            <button className="gallery-nav prev" onClick={goToPrevImage} aria-label="الصورة السابقة">
+              <ChevronRight size={20} />
+            </button>
+
+            <div className="gallery-frame">
+              <img
+                key={activeImage.src}
+                src={activeImage.src}
+                alt={activeImage.title}
+                className="gallery-main-image"
+              />
+            </div>
+
+            <button className="gallery-nav next" onClick={goToNextImage} aria-label="الصورة التالية">
+              <ChevronLeft size={20} />
+            </button>
+          </div>
+
+          <div className="gallery-caption">
+            <strong>{activeImage.title}</strong>
+            <span>{activeImage.type}</span>
+            <em>{activeImageIndex + 1} / {practiceGalleryImages.length}</em>
+          </div>
+
+          <div className="gallery-thumbs">
+            {practiceGalleryImages.map((image, index) => (
+              <button
+                key={image.src}
+                className={`gallery-thumb ${index === activeImageIndex ? 'active' : ''}`}
+                onClick={() => setActiveImageIndex(index)}
+                aria-label={`عرض ${image.title}`}
+              >
+                <img src={image.src} alt={image.title} />
+              </button>
+            ))}
+          </div>
+        </section>
       </section>
 
       <section id="growth" className="section two-columns">
