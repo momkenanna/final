@@ -241,6 +241,14 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <div className="evidence-grid" style={{marginTop:'1.5rem'}}>
+          <article className="evidence-card">
+            <FileText />
+            <h3>خطة دراسية - اللام الشمسية والقمرية</h3>
+            <p>خطة دراسية داعمة لمعيار المهني الفعال.</p>
+            <a href="/evidence/StudyPlan.pdf" target="_blank" rel="noopener noreferrer" className="evidence-link">عرض الدليل</a>
+          </article>
+        </div>
         {/* بطاقة المشاهدات I-LOR */}
         <article className="evidence-card attendance-card" style={{ marginTop: '2rem', maxWidth: '100%', width: '100%' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
